@@ -124,6 +124,8 @@ function compile_products(recipe::ImageRecipe)
         push!(load_path_entries, tmp_prefs_env)
     end
     env_overrides["JULIA_LOAD_PATH"] = join(load_path_entries, load_path_sep)
+    # Forward the current depot path so juliac works with custom JULIA_DEPOT_PATH setups.
+    env_overrides["JULIA_DEPOT_PATH"] = join(Base.DEPOT_PATH, load_path_sep)
 
     inst_cmd = addenv(`$(Base.julia_cmd(cpu_target=precompile_cpu_target)) --project=$project_arg -e "using Pkg; Pkg.instantiate(); Pkg.precompile()"`, env_overrides...)
     recipe.verbose && println("Running: $inst_cmd")
