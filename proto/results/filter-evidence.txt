@@ -1,0 +1,49 @@
+[baseline]
+7770 global_bytes=0 imaging=1
+7770 global_bytes=0 imaging=1
+7770 global_bytes=0 imaging=1
+7770 global_bytes=0 imaging=1
+PASS: independent states, stale/invalid handles, exhaustion, reset, null, exception, void, 1000 reuses
+
+[global]
+8371 global_bytes=50000000 imaging=1
+8371 global_bytes=50000000 imaging=1
+8371 global_bytes=50000000 imaging=1
+8371 global_bytes=50000000 imaging=1
+PASS: independent states, stale/invalid handles, exhaustion, reset, null, exception, void, 1000 reuses
+
+[local]
+8619 global_bytes=0 imaging=1
+8619 global_bytes=0 imaging=1
+8619 global_bytes=0 imaging=1
+8619 global_bytes=0 imaging=1
+PASS: independent states, stale/invalid handles, exhaustion, reset, null, exception, void, 1000 reuses
+
+[package]
+8873 global_bytes=0 imaging=1
+8873 global_bytes=0 imaging=1
+8873 global_bytes=0 imaging=1
+8873 global_bytes=0 imaging=1
+PASS: independent states, stale/invalid handles, exhaustion, reset, null, exception, void, 1000 reuses
+
+[initok]
+9116 global_bytes=0 imaging=1
+9116 global_bytes=0 imaging=1
+9116 global_bytes=0 imaging=1
+9116 global_bytes=0 imaging=1
+STAGED_BUILD_ONLY_INIT_RAN
+PASS: independent states, stale/invalid handles, exhaustion, reset, null, exception, void, 1000 reuses
+
+[initfail]
+Verifier error #1: unresolved call from statement (Base.getfield(StagedBuildOnlyBad.CALLBACK, :x)::Any)(1.0)::Any
+Stacktrace:
+ [1] __init__()
+   @ StagedBuildOnlyBad ~/.factory/runners/work/clones/049c0623-7fa2-41ee-b1c5-0c3806fe9f25/proto/fixtures/StagedBuildOnlyBad/src/StagedBuildOnlyBad.jl:4
+
+
+[global_reachable]
+9509 global_bytes=50000000 imaging=1
+9509 global_bytes=50000000 imaging=1
+9509 global_bytes=50000000 imaging=1
+9509 global_bytes=50000000 imaging=1
+PASS: independent states, stale/invalid handles, exhaustion, reset, null, exception, void, 1000 reuses

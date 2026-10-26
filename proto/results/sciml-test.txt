@@ -1,0 +1,2 @@
+native x(1)=-9.408450567062301 t=1.0
+PASS: baked SciML integrators, independent state, solve!, reset

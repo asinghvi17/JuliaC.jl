@@ -1,0 +1,160 @@
+[
+  {
+    "variant": "baseline",
+    "trim": "PASS",
+    "so_bytes": 1844784,
+    "array_payload": false,
+    "payload_Z_bytes": 0,
+    "c_test": "PASS",
+    "runtime_init_marker": false,
+    "setup_calls": 4,
+    "setup_in_image": true,
+    "global_live_at_setup": false,
+    "size": [
+      "319565",
+      "773232",
+      "5176",
+      "1097973"
+    ],
+    "setup_native_code": false,
+    "scratch_native_code": false,
+    "format_native_code": false,
+    "stdlib_names_in_image": [
+      "TOML"
+    ]
+  },
+  {
+    "variant": "global",
+    "trim": "PASS",
+    "so_bytes": 1860384,
+    "array_payload": false,
+    "payload_Z_bytes": 0,
+    "c_test": "PASS",
+    "runtime_init_marker": false,
+    "setup_calls": 4,
+    "setup_in_image": true,
+    "global_live_at_setup": true,
+    "size": [
+      "319689",
+      "788848",
+      "5176",
+      "1113713"
+    ],
+    "setup_native_code": false,
+    "scratch_native_code": false,
+    "format_native_code": false,
+    "stdlib_names_in_image": [
+      "Printf",
+      "Dates",
+      "TOML"
+    ]
+  },
+  {
+    "variant": "local",
+    "trim": "PASS",
+    "so_bytes": 1847880,
+    "array_payload": false,
+    "payload_Z_bytes": 0,
+    "c_test": "PASS",
+    "runtime_init_marker": false,
+    "setup_calls": 4,
+    "setup_in_image": true,
+    "global_live_at_setup": false,
+    "size": [
+      "319545",
+      "776552",
+      "5176",
+      "1101273"
+    ],
+    "setup_native_code": false,
+    "scratch_native_code": false,
+    "format_native_code": false,
+    "stdlib_names_in_image": [
+      "Printf",
+      "Dates",
+      "TOML"
+    ]
+  },
+  {
+    "variant": "package",
+    "trim": "PASS",
+    "so_bytes": 1847544,
+    "array_payload": false,
+    "payload_Z_bytes": 0,
+    "c_test": "PASS",
+    "runtime_init_marker": false,
+    "setup_calls": 4,
+    "setup_in_image": true,
+    "global_live_at_setup": false,
+    "size": [
+      "319605",
+      "776552",
+      "5176",
+      "1101333"
+    ],
+    "setup_native_code": false,
+    "scratch_native_code": false,
+    "format_native_code": false,
+    "stdlib_names_in_image": [
+      "Printf",
+      "Dates",
+      "TOML"
+    ]
+  },
+  {
+    "variant": "initok",
+    "trim": "PASS",
+    "so_bytes": 1849320,
+    "array_payload": false,
+    "payload_Z_bytes": 0,
+    "c_test": "PASS",
+    "runtime_init_marker": true,
+    "setup_calls": 4,
+    "setup_in_image": true,
+    "global_live_at_setup": false,
+    "size": [
+      "320281",
+      "776456",
+      "5192",
+      "1101929"
+    ],
+    "setup_native_code": false,
+    "scratch_native_code": false,
+    "format_native_code": false,
+    "stdlib_names_in_image": [
+      "TOML"
+    ]
+  },
+  {
+    "variant": "initfail",
+    "trim": "FAIL",
+    "c_test": "not built",
+    "expected_init_failure": true
+  },
+  {
+    "variant": "global_reachable",
+    "trim": "PASS",
+    "so_bytes": 51864680,
+    "array_payload": true,
+    "payload_Z_bytes": 49999000,
+    "c_test": "PASS",
+    "runtime_init_marker": false,
+    "setup_calls": 4,
+    "setup_in_image": true,
+    "global_live_at_setup": true,
+    "size": [
+      "321070",
+      "50790864",
+      "5240",
+      "51117174"
+    ],
+    "setup_native_code": false,
+    "scratch_native_code": false,
+    "format_native_code": false,
+    "stdlib_names_in_image": [
+      "Printf",
+      "Dates",
+      "TOML"
+    ]
+  }
+]

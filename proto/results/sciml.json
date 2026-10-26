@@ -1,0 +1,14 @@
+{
+  "variant": "sciml-quiet",
+  "trim": "PASS",
+  "so_bytes": 2558560,
+  "c_test": "PASS",
+  "native_test": "PASS",
+  "reference_x_at_1": -9.408450567062301,
+  "size": [
+    "406280",
+    "1185056",
+    "5640",
+    "1596976"
+  ]
+}

@@ -1,0 +1,10 @@
+[deps]
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+StagedBuildOnly = "632c0f39-8f10-4e8e-b283-bccf79dbb4f5"
+StagedBuildOnlyBad = "740612e5-3137-4094-ab63-6c7d8a140eac"
+TOML = "fa267f1f-6049-4f14-aa54-33bafae1ed76"
+
+[sources]
+StagedBuildOnly = {path = "../fixtures/StagedBuildOnly"}
+StagedBuildOnlyBad = {path = "../fixtures/StagedBuildOnlyBad"}

@@ -1,0 +1,126 @@
+Default-verbosity attempt: shell exit 139 (driver segmentation fault).
+The compiler emitted these trim-verifier errors first:
+Verifier error #1: trim verification not yet implemented for builtin `Core.invoke_in_world` from statement (Core.invoke_in_world)(ccall(:jl_get_tls_world_age)::UInt64, Base.typeinfo_implicit, Int64)::Any
+    @ Base arrayshow.jl:553 [inlined]
+    @ Base arrayshow.jl:591 [inlined]
+    @ Base arrayshow.jl:515
+    @ Base arrayshow.jl:486 [inlined]
+    @ Base strings/io.jl:35
+    @ Base strings/io.jl:151
+    @ Base strings/io.jl:193 [inlined]
+    @ OrdinaryDiffEqCore ~/.julia/packages/OrdinaryDiffEqCore/f0hq4/src/integrators/integrator_utils.jl:801
+    @ OrdinaryDiffEqCore ~/.julia/packages/OrdinaryDiffEqCore/f0hq4/src/integrators/integrator_utils.jl:974
+    @ DiffEqBase ~/.julia/packages/DiffEqBase/dgDMc/src/check_error.jl:60 [inlined]
+    @ DiffEqBase ~/.julia/packages/DiffEqBase/dgDMc/src/check_error.jl:38 [inlined]
+    @ SciMLLogging ~/.julia/packages/SciMLLogging/zP0QP/src/utils.jl:33
+    @ SciMLLogging ~/.julia/packages/SciMLLogging/zP0QP/src/utils.jl:29 [inlined]
+    @ ~/.julia/packages/SciMLLogging/zP0QP/src/utils.jl:207 [inlined]
+    @ DiffEqBase ~/.julia/packages/DiffEqBase/dgDMc/src/check_error.jl:37 [inlined]
+    @ SciMLBase ~/.julia/packages/SciMLBase/2RA1m/src/integrator_interface.jl:1045
+    @ SciMLBase ~/.julia/packages/SciMLBase/2RA1m/src/integrator_interface.jl:1086 [inlined]
+    @ OrdinaryDiffEqCore ~/.julia/packages/OrdinaryDiffEqCore/f0hq4/src/solve.jl:909
+    @ Main.SciMLProgram ~/.factory/runners/work/clones/049c0623-7fa2-41ee-b1c5-0c3806fe9f25/proto/SciMLProgram.jl:18 [inlined]
+Verifier error #2: unresolved call from statement (f::Function)(%new()::IOContext{IOBuffer}, Core.getfield(args::Tuple{String}, 1)::String)::Any
+    @ Base util.jl:78
+    @ Base util.jl:141 [inlined]
+    @ Base show.jl:446 [inlined]
+    @ Base show.jl:1412
+    @ Base show.jl:1411 [inlined]
+    @ Base arrayshow.jl:530
+    @ Base arrayshow.jl:515 [inlined]
+    @ Base arrayshow.jl:486 [inlined]
+    @ Base strings/io.jl:35
+    @ Base strings/io.jl:151
+    @ Base strings/io.jl:193 [inlined]
+    @ OrdinaryDiffEqCore ~/.julia/packages/OrdinaryDiffEqCore/f0hq4/src/integrators/integrator_utils.jl:801
+    @ OrdinaryDiffEqCore ~/.julia/packages/OrdinaryDiffEqCore/f0hq4/src/integrators/integrator_utils.jl:974
+    @ DiffEqBase ~/.julia/packages/DiffEqBase/dgDMc/src/check_error.jl:60 [inlined]
+    @ DiffEqBase ~/.julia/packages/DiffEqBase/dgDMc/src/check_error.jl:38 [inlined]
+    @ SciMLLogging ~/.julia/packages/SciMLLogging/zP0QP/src/utils.jl:33
+    @ SciMLLogging ~/.julia/packages/SciMLLogging/zP0QP/src/utils.jl:29 [inlined]
+    @ ~/.julia/packages/SciMLLogging/zP0QP/src/utils.jl:207 [inlined]
+    @ DiffEqBase ~/.julia/packages/DiffEqBase/dgDMc/src/check_error.jl:37 [inlined]
+    @ SciMLBase ~/.julia/packages/SciMLBase/2RA1m/src/integrator_interface.jl:1045
+    @ SciMLBase ~/.julia/packages/SciMLBase/2RA1m/src/integrator_interface.jl:1086 [inlined]
+    @ OrdinaryDiffEqCore ~/.julia/packages/OrdinaryDiffEqCore/f0hq4/src/solve.jl:909
+    @ Main.SciMLProgram ~/.factory/runners/work/clones/049c0623-7fa2-41ee-b1c5-0c3806fe9f25/proto/SciMLProgram.jl:18 [inlined]
+Verifier error #3: unresolved call from statement Base.print(io::Any, φ ()::Any)::Any
+    @ Base strings/lazy.jl:85
+    @ Base ~/.factory/runners/work/clones/049c0623-7fa2-41ee-b1c5-0c3806fe9f25/src/scripts/juliac-trim-base.jl:39
+    @ Base ~/.factory/runners/work/clones/049c0623-7fa2-41ee-b1c5-0c3806fe9f25/src/scripts/juliac-trim-base.jl:32 [inlined]
+    @ Base strings/lazy.jl:83 [inlined]
+    @ Base strings/lazy.jl:94 [inlined]
+    @ Base strings/io.jl:199
+    @ Base strings/io.jl:151
+    @ Base strings/io.jl:193 [inlined]
+    @ DiffEqBase ~/.julia/packages/DiffEqBase/dgDMc/src/check_error.jl:38 [inlined]
+    @ SciMLLogging ~/.julia/packages/SciMLLogging/zP0QP/src/utils.jl:33
+    @ SciMLLogging ~/.julia/packages/SciMLLogging/zP0QP/src/utils.jl:29 [inlined]
+    @ ~/.julia/packages/SciMLLogging/zP0QP/src/utils.jl:207 [inlined]
+    @ DiffEqBase ~/.julia/packages/DiffEqBase/dgDMc/src/check_error.jl:37 [inlined]
+    @ SciMLBase ~/.julia/packages/SciMLBase/2RA1m/src/integrator_interface.jl:1035
+    @ SciMLBase ~/.julia/packages/SciMLBase/2RA1m/src/integrator_interface.jl:1086 [inlined]
+    @ OrdinaryDiffEqCore ~/.julia/packages/OrdinaryDiffEqCore/f0hq4/src/solve.jl:909
+    @ Main.SciMLProgram ~/.factory/runners/work/clones/049c0623-7fa2-41ee-b1c5-0c3806fe9f25/proto/SciMLProgram.jl:18 [inlined]
+Verifier error #4: trim verification not yet implemented for builtin `Core.invoke_in_world` from statement (Core.invoke_in_world)(ccall(:jl_get_tls_world_age)::UInt64, Base.typeinfo_implicit, Int64)::Any
+    @ Base arrayshow.jl:553 [inlined]
+    @ Base arrayshow.jl:591 [inlined]
+    @ Base arrayshow.jl:515
+    @ Base arrayshow.jl:486 [inlined]
+    @ Base strings/io.jl:35
+    @ Base strings/io.jl:151
+    @ Base strings/io.jl:193 [inlined]
+    @ OrdinaryDiffEqCore ~/.julia/packages/OrdinaryDiffEqCore/f0hq4/src/integrators/integrator_utils.jl:801
+    @ OrdinaryDiffEqCore ~/.julia/packages/OrdinaryDiffEqCore/f0hq4/src/integrators/integrator_utils.jl:974
+    @ DiffEqBase ~/.julia/packages/DiffEqBase/dgDMc/src/check_error.jl:60 [inlined]
+    @ DiffEqBase ~/.julia/packages/DiffEqBase/dgDMc/src/check_error.jl:38 [inlined]
+    @ SciMLLogging ~/.julia/packages/SciMLLogging/zP0QP/src/utils.jl:33
+    @ SciMLLogging ~/.julia/packages/SciMLLogging/zP0QP/src/utils.jl:29 [inlined]
+    @ ~/.julia/packages/SciMLLogging/zP0QP/src/utils.jl:207 [inlined]
+    @ DiffEqBase ~/.julia/packages/DiffEqBase/dgDMc/src/check_error.jl:37 [inlined]
+    @ SciMLBase ~/.julia/packages/SciMLBase/2RA1m/src/integrator_interface.jl:1045
+    @ SciMLBase ~/.julia/packages/SciMLBase/2RA1m/src/integrator_interface.jl:1086 [inlined]
+    @ OrdinaryDiffEqCore ~/.julia/packages/OrdinaryDiffEqCore/f0hq4/src/solve.jl:909
+    @ Main.SciMLProgram ~/.factory/runners/work/clones/049c0623-7fa2-41ee-b1c5-0c3806fe9f25/proto/SciMLProgram.jl:18 [inlined]
+Verifier error #5: unresolved call from statement (f::Function)(%new()::IOContext{IOBuffer}, Core.getfield(args::Tuple{String}, 1)::String)::Any
+    @ Base util.jl:78
+    @ Base util.jl:141 [inlined]
+    @ Base show.jl:446 [inlined]
+    @ Base show.jl:1412
+    @ Base show.jl:1411 [inlined]
+    @ Base arrayshow.jl:530
+    @ Base arrayshow.jl:515 [inlined]
+    @ Base arrayshow.jl:486 [inlined]
+    @ Base strings/io.jl:35
+    @ Base strings/io.jl:151
+    @ Base strings/io.jl:193 [inlined]
+    @ OrdinaryDiffEqCore ~/.julia/packages/OrdinaryDiffEqCore/f0hq4/src/integrators/integrator_utils.jl:801
+    @ OrdinaryDiffEqCore ~/.julia/packages/OrdinaryDiffEqCore/f0hq4/src/integrators/integrator_utils.jl:974
+    @ DiffEqBase ~/.julia/packages/DiffEqBase/dgDMc/src/check_error.jl:60 [inlined]
+    @ DiffEqBase ~/.julia/packages/DiffEqBase/dgDMc/src/check_error.jl:38 [inlined]
+    @ SciMLLogging ~/.julia/packages/SciMLLogging/zP0QP/src/utils.jl:33
+    @ SciMLLogging ~/.julia/packages/SciMLLogging/zP0QP/src/utils.jl:29 [inlined]
+    @ ~/.julia/packages/SciMLLogging/zP0QP/src/utils.jl:207 [inlined]
+    @ DiffEqBase ~/.julia/packages/DiffEqBase/dgDMc/src/check_error.jl:37 [inlined]
+    @ SciMLBase ~/.julia/packages/SciMLBase/2RA1m/src/integrator_interface.jl:1045
+    @ SciMLBase ~/.julia/packages/SciMLBase/2RA1m/src/integrator_interface.jl:1086 [inlined]
+    @ OrdinaryDiffEqCore ~/.julia/packages/OrdinaryDiffEqCore/f0hq4/src/solve.jl:909
+    @ Main.SciMLProgram ~/.factory/runners/work/clones/049c0623-7fa2-41ee-b1c5-0c3806fe9f25/proto/SciMLProgram.jl:18 [inlined]
+Verifier error #6: unresolved call from statement Base.print(io::Any, φ ()::Any)::Any
+    @ Base strings/lazy.jl:85
+    @ Base ~/.factory/runners/work/clones/049c0623-7fa2-41ee-b1c5-0c3806fe9f25/src/scripts/juliac-trim-base.jl:39
+    @ Base ~/.factory/runners/work/clones/049c0623-7fa2-41ee-b1c5-0c3806fe9f25/src/scripts/juliac-trim-base.jl:32 [inlined]
+    @ Base strings/lazy.jl:83 [inlined]
+    @ Base strings/lazy.jl:94 [inlined]
+    @ Base strings/io.jl:199
+    @ Base strings/io.jl:151
+    @ Base strings/io.jl:193 [inlined]
+    @ DiffEqBase ~/.julia/packages/DiffEqBase/dgDMc/src/check_error.jl:38 [inlined]
+    @ SciMLLogging ~/.julia/packages/SciMLLogging/zP0QP/src/utils.jl:33
+    @ SciMLLogging ~/.julia/packages/SciMLLogging/zP0QP/src/utils.jl:29 [inlined]
+    @ ~/.julia/packages/SciMLLogging/zP0QP/src/utils.jl:207 [inlined]
+    @ DiffEqBase ~/.julia/packages/DiffEqBase/dgDMc/src/check_error.jl:37 [inlined]
+    @ SciMLBase ~/.julia/packages/SciMLBase/2RA1m/src/integrator_interface.jl:1035
+    @ SciMLBase ~/.julia/packages/SciMLBase/2RA1m/src/integrator_interface.jl:1086 [inlined]
+    @ OrdinaryDiffEqCore ~/.julia/packages/OrdinaryDiffEqCore/f0hq4/src/solve.jl:909
+    @ Main.SciMLProgram ~/.factory/runners/work/clones/049c0623-7fa2-41ee-b1c5-0c3806fe9f25/proto/SciMLProgram.jl:18 [inlined]
